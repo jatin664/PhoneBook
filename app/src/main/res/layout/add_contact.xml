@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Name"
+            android:background="@android:color/transparent"
+            android:textColorHint="@color/colorAccent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/nameed"/>
+
+        <View
+            style="@style/ruler" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Company"
+            android:background="@android:color/transparent"
+            android:textColorHint="@color/colorAccent"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/companyed"/>
+
+        <View
+            style="@style/ruler" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Title"
+            android:background="@android:color/transparent"
+            android:textColorHint="@color/colorAccent"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/titleed"/>
+
+        <View
+            style="@style/ruler2" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:spinnerMode="dropdown"
+                android:entries="@array/phonenumber"
+                android:id="@+id/sp1"/>
+
+            <EditText
+                android:layout_width="260dp"
+                android:layout_height="45dp"
+                android:hint="Phone"
+                android:inputType="number"
+                android:background="@android:color/transparent"
+                android:textColorHint="@color/colorAccent"
+                android:id="@+id/phonenumed"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/ruler2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:spinnerMode="dropdown"
+            android:entries="@array/email"
+            android:id="@+id/sp2"/>
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="45dp"
+            android:hint="Email"
+            android:background="@android:color/transparent"
+            android:textColorHint="@color/colorAccent"
+            android:id="@+id/emailed"/>
+
+    </LinearLayout>
+
+        <View
+            style="@style/ruler2" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Add another field"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:onClick="extraFields"
+            android:id="@+id/btn1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Nickname"
+            android:visibility="gone"
+            android:background="@android:color/transparent"
+            android:textColorHint="@color/colorAccent"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/nicknameed"/>
+
+        <View
+            style="@style/ruler"
+            android:id="@+id/nicknameline"
+            android:visibility="gone"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Website"
+            android:visibility="gone"
+            android:background="@android:color/transparent"
+            android:textColorHint="@color/colorAccent"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/websiteed"/>
+
+        <View
+            style="@style/ruler"
+            android:id="@+id/websiteline"
+            android:visibility="gone"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Notes"
+            android:visibility="gone"
+            android:background="@android:color/transparent"
+            android:textColorHint="@color/colorAccent"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/notesed"/>
+
+        <View
+            style="@style/ruler"
+            android:id="@+id/noetsline"
+            android:visibility="gone"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Save"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="#fff"
+            android:onClick="saveContact"/>
+
+        <View
+            style="@style/ruler2"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

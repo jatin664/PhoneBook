@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#00BAAD</item>
+        <item name="colorPrimaryDark">#00BAAD</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="ruler">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1.5dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+    <style name="ruler2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">8dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+    <style name="CallStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">#0895A7</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

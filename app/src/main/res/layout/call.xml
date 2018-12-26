@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Call">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#0895A7"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textStyle="normal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="55dp"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/screw"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="10dp"
+                    android:background="@drawable/editdelete"
+                    android:onClick="editClick"
+                    android:id="@+id/btn4"/>
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Delete"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="55dp"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/screw"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="10dp"
+                    android:background="@drawable/editdelete"
+                    android:onClick="delClick"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="135dp"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:drawableLeft="@drawable/calldrawable"
+                android:drawablePadding="10dp"
+                android:id="@+id/nametxt"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- phone number !-->
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableLeft="@drawable/mobiletag"
+                android:textColor="#000"
+                android:textAllCaps="false"
+                android:textStyle="normal"
+                android:gravity="center"
+                android:textSize="18sp"
+                style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                android:id="@+id/btn1"/>
+
+                <View
+                    style="@style/ruler"/>
+
+                <!-- Icons !-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:id="@+id/ll"
+                    android:weightSum="3">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#0895A7"
+                        android:text="Message"
+                        android:textColor="#fff"
+                        android:onClick="messageClick"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Call"
+                        android:textColor="#fff"
+                        android:background="#0895A7"
+                        android:onClick="callClick"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#0895A7"
+                        android:text="Cancel"
+                        android:textColor="#fff"
+                        android:onClick="cancelClick"/>
+
+
+                </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableLeft="@drawable/worktag"
+                android:textColor="#000"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:textSize="18sp"
+                style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                android:id="@+id/btn2"/>
+
+            <View
+                style="@style/ruler" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableLeft="@drawable/web"
+                android:textColor="#000"
+                android:textStyle="normal"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:gravity="center"
+                style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                android:id="@+id/btn3"/>
+
+                <View
+                    style="@style/ruler2"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Notes"
+                android:textAllCaps="false"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/notesborder"
+                android:editable="false"
+                android:id="@+id/notesend"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
